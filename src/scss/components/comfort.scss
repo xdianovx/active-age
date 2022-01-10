@@ -1,0 +1,55 @@
+.comfort {
+  padding-top: 167px;
+  padding-bottom: 231px;
+}
+
+.comfort__wrap {
+  display: flex;
+  align-items: flex-start;
+  //justify-content: space-between;
+  margin-top: 93px;
+}
+
+.comfort__left {
+  width: 100%;
+  max-width: 425px;
+}
+
+.comfort__link {
+  display: block;
+  margin-top: 36px;
+  color: $accent;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.comfort__right {
+  margin-top: 50px;
+  width: 100%;
+  margin-left: 77px;
+}
+
+.comfort__list {
+  display: grid;
+  grid-template-columns: repeat(2, 228px);
+  gap: 74px 0;
+  justify-content: space-between;
+}
+
+.comfort__item {
+  position: relative;
+  padding-left: 38px;
+  font-size: 16px;
+  font-weight: 400;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 15px;
+    height: 3px;
+    background-color: #00ffa8;
+    content: '';
+  }
+}
