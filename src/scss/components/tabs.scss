@@ -1,0 +1,29 @@
+.tabs {
+  position: relative;
+}
+
+.tabs__list {
+  display: flex;
+  align-items: center;
+}
+
+.tabs__btn {
+  border: none;
+  cursor: pointer;
+
+  &.active {
+    color: red;
+  }
+}
+
+.tabs__btn:hover {
+  color: red;
+}
+
+.tabs__content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
