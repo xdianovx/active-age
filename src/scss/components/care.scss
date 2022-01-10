@@ -1,0 +1,42 @@
+.care {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  color: $white;
+  background-color: #4c4c4c;
+  background-image: url(../images/care-bg.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+}
+
+.care__info {
+  width: 100%;
+  max-width: 734px;
+}
+
+.care__title {
+  font-size: 30px;
+  font-family: 'IkraSlab';
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.care__text {
+  margin-top: 67px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.27px;
+}
+
+.care__bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 67px;
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.18px;
+    margin-left: 36px;
+  }
+}

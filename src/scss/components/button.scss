@@ -8,7 +8,6 @@
 .btn-main {
   transition: all 0.3s ease;
 
-
   &:hover {
   }
 
@@ -17,13 +16,29 @@
 }
 
 .btn-white {
-  transition: all 0.3s ease;
-  background: $white;
-  font-size: 14px;
-  font-weight: 700;
-  color: $text;
   padding: 20px 50px;
+  color: $text;
+  font-weight: 700;
+  font-size: 14px;
+  background: $white;
   border-radius: 26px;
+  transition: all 0.3s ease;
+
+  &:hover {
+  }
+
+  &:active {
+  }
+}
+
+.btn-gradient {
+  padding: 20px 30px;
+  color: $text;
+  font-weight: 700;
+  font-size: 16px;
+  background-image: linear-gradient(to top, #0096ff 0%, #00ffa8 100%);
+  border-radius: 26px;
+  transition: all 0.3s ease;
 
   &:hover {
   }
