@@ -1,0 +1,13 @@
+.burger {
+  width: 25px;
+  height: 17px;
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+
+  }
+}
