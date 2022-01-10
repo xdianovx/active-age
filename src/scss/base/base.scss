@@ -66,29 +66,32 @@ img {
 }
 
 .title-h2 {
-  font-family: 'IkraSlab';
-  font-size: 32px;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 48px;
-  text-transform: uppercase;
-  text-align: center;
   position: relative;
-  &:before {
-    content: '';
+  font-size: 32px;
+  font-family: 'IkraSlab';
+  font-style: normal;
+  line-height: 48px;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
     position: absolute;
-    background: $accent;
-    width: 60px;
-    height: 3px;
     top: -64px;
     left: 50%;
+    width: 60px;
+    height: 3px;
+    background: $accent;
     transform: translateX(-50%);
+    content: '';
   }
 }
 
 .subtitle {
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
+  margin-top: 10px;
   color: $accent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
 }
