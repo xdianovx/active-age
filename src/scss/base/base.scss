@@ -63,9 +63,32 @@ img {
   font-size: 87px;
   font-family: 'IkraSlab';
   line-height: 71px;
+}
 
-  span {
-    display: block;
-    color: #0096ff;
+.title-h2 {
+  font-family: 'IkraSlab';
+  font-size: 32px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background: $accent;
+    width: 60px;
+    height: 3px;
+    top: -64px;
+    left: 50%;
+    transform: translateX(-50%);
   }
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: $accent;
 }
