@@ -1,25 +1,42 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  padding: 66px 0;
+
+  .excursion {
+    margin-left: 100px;
+  }
 }
 
 .header__wrap {
-}
-
-.header__nav {
-  ul {
-  }
-
-  li {
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  display: flex;
+  align-items: center;
 }
 
 .header__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: $white;
 }
 
-.icon {
+.header__phone {
+  margin-left: 77px;
 }
 
-.header__phones {
+.excursion {
+  padding: 12px 16px;
+  color: $white;
+  font-weight: 600;
+  font-size: 12px;
+  background: $gray;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }

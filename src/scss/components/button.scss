@@ -6,7 +6,24 @@
 }
 
 .btn-main {
-  transition: box-shadow 0.3s ease, background 0.1s ease;
+  transition: all 0.3s ease;
+
+
+  &:hover {
+  }
+
+  &:active {
+  }
+}
+
+.btn-white {
+  transition: all 0.3s ease;
+  background: $white;
+  font-size: 14px;
+  font-weight: 700;
+  color: $text;
+  padding: 20px 50px;
+  border-radius: 26px;
 
   &:hover {
   }

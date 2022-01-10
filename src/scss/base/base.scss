@@ -47,16 +47,25 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   min-height: 100%;
-  font-weight: 400;
   color: $text;
+  font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
-
-
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.title-h1 {
+  font-size: 87px;
+  font-family: 'IkraSlab';
+  line-height: 71px;
+
+  span {
+    display: block;
+    color: #0096ff;
+  }
 }
