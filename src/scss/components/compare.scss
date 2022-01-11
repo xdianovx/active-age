@@ -1,0 +1,133 @@
+.compare {
+  padding-top: 246px;
+  padding-bottom: 230px;
+}
+
+.compare__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 78px;
+}
+
+.compare-image {
+  width: 100%;
+  max-width: 218px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.compare-table {
+  width: 100%;
+  max-width: 691px;
+}
+
+.compare-table__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  > .compare-table__house {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    color: $accent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    border: 2px solid $accent;
+    border-radius: 50%;
+  }
+
+  > .compare-table__nurse {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    color: $accent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    border: 2px solid $accent;
+    border-radius: 50%;
+  }
+}
+
+.compare-table__head {
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-bottom: 2px solid $accent;
+
+  .compare-table__house {
+    width: 25%;
+    height: auto;
+    color: $text;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  .compare-table__nurse {
+    width: 25%;
+    height: auto;
+    color: $text;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+  }
+}
+
+.compare-table__house {
+  width: 25%;
+  text-align: center;
+}
+
+.compare-table__nurse {
+  width: 25%;
+  text-align: center;
+}
+
+.compare-table__title {
+  width: 50%;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.compare-table__footer {
+  align-items: center;
+  margin-top: 30px;
+  .compare-table__house {
+    border: none;
+    color: $accent;
+    width: 25%;
+    line-height: 1;
+    height: auto;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .compare-table__nurse {
+    border: none;
+    color: $accent;
+    width: 25%;
+    line-height: 1;
+    height: auto;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .compare-table__title {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+  }
+}
