@@ -7,7 +7,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 
@@ -22,7 +22,7 @@
 .hero__woman {
   position: absolute;
   top: 180px;
-  right: 80px;
+  right: 96px;
   //width: 1280px;
 
   img {
@@ -32,7 +32,11 @@
 
 .hero__info {
   max-width: 967px;
+  margin-top: 320px;
   padding-left: 144px;
+  .title-h1 {
+    line-height: 78px;
+  }
 }
 
 .hero__subtitle {
@@ -46,14 +50,14 @@
 
 .hero__features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 136px;
+  grid-template-columns: repeat(2, 469px);
+  margin-top: 119px;
 }
 
 .hero__feature {
   position: relative;
   max-width: 275px;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
   padding-left: 20px;
   font-weight: 500;
   font-size: 16px;
@@ -72,8 +76,8 @@
 
 .hero-stock {
   position: absolute;
-  right: 0;
-  right: 0;
+  right: 83px;
+  top: 607px;
   max-width: 228px;
 
   &::before {
@@ -87,17 +91,21 @@
   }
 
   .btn {
-    margin-top: 25px;
+    margin-top: 22px;
   }
 }
 
 .hero-stock__title {
   color: $white;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 22px;
+  line-height: 26px;
 }
 
 .hero-stock__subtitle {
   color: $white;
   font-weight: 500;
+  margin-top: 1px;
+  font-size: 18px;
 }

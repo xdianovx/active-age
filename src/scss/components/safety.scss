@@ -1,13 +1,23 @@
 .safety {
-  padding-top: 160px;
-  padding-bottom: 125px;
+  padding-top: 216px;
+  padding-bottom: 55px;
+  .title-h2 {
+    &:before {
+      top: -56px;
+    }
+  }
+
+  .subtitle {
+    margin-top: -5px;
+  }
 }
+
 
 .safety__wrap {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 146px auto 0;
+  margin: 135px auto 0;
 }
 
 .safety__left {
@@ -15,13 +25,14 @@
 }
 
 .safety__right {
-  max-width: 317px;
+  max-width: 328px;
+  margin-top: 10px;
 }
 
 .safety__item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 60px;
+  margin-bottom: 54px;
   &:last-of-type {
     margin-bottom: 0;
   }

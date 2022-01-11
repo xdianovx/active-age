@@ -1,5 +1,5 @@
 .booking {
-  padding: 105px 0;
+  padding: 109px 0 100px;
   background: #4c4c4c;
   //max-height: 700px;
   .title-h2 {
@@ -16,8 +16,9 @@
 
   .subtitle {
     color: $white;
+    margin-top: 1px;
     font-size: 32px;
-    font-family: 'IkraSlab';
+    font-family: 'IkraSlab', sans-serif;
     font-style: normal;
     line-height: 48px;
     line-height: 1;
@@ -29,17 +30,19 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 56px;
+  margin-top: 65px;
+  padding: 0 15px;
 }
 
 .booking-info {
   width: 100%;
-  margin-left: 50px;
+  margin-left: 54px;
   color: $white;
 
   p {
+    margin-top: -5px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
   }
 
@@ -51,7 +54,7 @@
 .booking-image {
   position: relative;
   width: 100%;
-  max-width: 374px;
+  max-width: 365px;
   height: 100px;
 
   img {

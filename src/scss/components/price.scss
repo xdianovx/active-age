@@ -1,5 +1,5 @@
 .price-top {
-  padding-top: 160px;
+  padding-top: 159px;
   padding-bottom: 125px;
   background: $accent;
   position: relative;
@@ -16,6 +16,7 @@
 
   .title-h2 {
     color: $white;
+    line-height: 38px;
 
     &::before {
       background: $white;
@@ -23,17 +24,21 @@
   }
 
   .subtitle {
+    max-width: 900px;
+    margin: 10px auto 0;
+    line-height: 130%;
     color: $white;
   }
 }
 .price-bottom {
-  margin-top: -60px;
+  margin-top: -63px;
 }
 
 .price-card__wrap {
   display: grid;
   justify-content: space-between;
-  grid-template-columns: repeat(4, 228px);
+  grid-template-columns: repeat(4, 225px);
+  padding: 0 15px;
 }
 
 .price-card {
