@@ -64,3 +64,22 @@
   &:active {
   }
 }
+
+
+.btn-accent {
+  padding: 20px 30px;
+  color: $white;
+  font-weight: 700;
+  font-size: 16px;
+  background: $accent;
+  text-transform: uppercase;
+  border-radius: 32px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+  }
+}

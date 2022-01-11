@@ -1,0 +1,64 @@
+.booking {
+  padding: 105px 0;
+  background: #4c4c4c;
+  //max-height: 700px;
+  .title-h2 {
+    color: #00ffa8;
+    font-size: 32px;
+    font-family: 'IkraSlab';
+    line-height: 1;
+    text-transform: uppercase;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .subtitle {
+    color: $white;
+    font-size: 32px;
+    font-family: 'IkraSlab';
+    font-style: normal;
+    line-height: 48px;
+    line-height: 1;
+    letter-spacing: normal;
+  }
+}
+
+.booking__wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 56px;
+}
+
+.booking-info {
+  width: 100%;
+  margin-left: 50px;
+  color: $white;
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .btn {
+    margin-top: 47px;
+  }
+}
+
+.booking-image {
+  position: relative;
+  width: 100%;
+  max-width: 374px;
+  height: 100px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+  }
+}
