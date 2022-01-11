@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <head>
+      <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=b4a80f0e-aa5c-4f6d-9741-4cd538701f29&lang=ru_RU"
+        type="text/javascript"
+      ></script>
+    </head>
     <title>Document</title>
   </head>
   <body>
@@ -1003,9 +1009,46 @@
         </div>
       </section>
       <!-- Reviews end-->
+
+      <!-- Map start-->
+      <section class="contacts">
+        <div id="map"></div>
+        <div class="container-small">
+
+          <div class="contacts__wrap">
+            <h2 class="title-h2">
+              Контактная <br />
+              информация
+            </h2>
+
+            <div class="contacts__col">
+              <div class="contacts__item">
+                <h5>Адрес:</h5>
+                <p>г. Нижний Новгород, ул. Движенцев, 17л</p>
+              </div>
+              <div class="contacts__item">
+                <h5>Телефон:</h5>
+                <a href="tel:+7 930 287 20 15">+7 930 287 20 15</a>
+              </div>
+            </div>
+            <div class="contacts__col">
+              <div class="contacts__item">
+                <h5>Время работы:</h5>
+                <p>Ежедневно, круглосуточно</p>
+              </div>
+              <div class="contacts__item">
+                <h5>Email:</h5>
+                <a href="mailto:info@rdupansionat.ru">info@rdupansionat.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Map end-->
     </main>
 
     @@include('./components/footer.html')
+
     <script src="./js/main.min.js"></script>
   </body>
 </html>

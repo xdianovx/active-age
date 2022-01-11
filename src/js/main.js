@@ -10,4 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
   select()
   gallery()
   reviews()
+
+  ymaps.ready(init);
+  function init(){
+    // Creating the map.
+    var myMap = new ymaps.Map("map", {
+      center: [56.294251, 43.844595],
+      zoom: 12
+    }), myPlacemark = new ymaps.Placemark([56.294251, 43.844595], {
+      hintContent: "Хинт метки"
+    });
+    myMap.behaviors.disable('scrollZoom')
+    myMap.geoObjects.add(myPlacemark);
+  }
 })
