@@ -738,6 +738,88 @@
         <div class="timeline-line"></div>
       </section>
       <!-- Schedule end-->
+
+      <!-- Cost start-->
+      <section class="cost-section">
+        <div class="container">
+          <h2 class="title-h2">Расчёт стоимости</h2>
+          <p class="subtitle">проживания в пансионате</p>
+        </div>
+        <div class="cost__wrap">
+          <div class="cost-form">
+            <form action="#">
+              <div class="form-row">
+                <input type="number" name="" id="" placeholder="Возраст" />
+                <label class="radio">
+                  <input type="radio" name="sex" required="" />
+                  <div class="radio__text">Мужчина</div>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="sex" required="" />
+                  <div class="radio__text">Женщина</div>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <h4>Лежачий?</h4>
+                <label class="radio">
+                  <input type="radio" name="bedridden" required="" />
+                  <div class="radio__text">Да</div>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="bedridden" required="" />
+                  <div class="radio__text">Нет</div>
+                </label>
+              </div>
+
+              <div class="form-row form-row-col">
+                <h4>Условия размещения (тип комнаты)</h4>
+                <select class="select" name="" id="">
+                  <option value="1">5-местный номер</option>
+                  <option value="1">5-местный номер</option>
+                  <option value="1">5-местный номер</option>
+                  <option value="1">5-местный номер</option>
+                </select>
+              </div>
+
+              <div class="form-row form-row-col">
+                <h4>Срок пребывания (дней)</h4>
+                <select class="select" name="" id="">
+                  <option value="1">7</option>
+                  <option value="1">21</option>
+                  <option value="1">48</option>
+                  <option value="1">50</option>
+                </select>
+              </div>
+
+              <button class="btn btn-transparent">Отправить заявку на расчёт</button>
+            </form>
+          </div>
+          <div class="cost-info">
+            <div class="cost-info__icon">
+              <img src="./images/cost-info.png" alt="" />
+            </div>
+
+            <h4 class="cost-info__title">
+              Документы, необходимые при заселении в пансионат:
+            </h4>
+
+            <ul class="cost-info__list">
+              <li>1. Паспорт</li>
+              <li>2. Медицинский полис</li>
+              <li>3. СНИЛС</li>
+              <li>4. Анализы на ВИЧ, РВ, гепатит, туберкулёз</li>
+            </ul>
+
+            <div class="cost-info__info">
+              Все анализы вы можете сдать у нас на месте.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cost end-->
     </main>
 
     @@include('./components/footer.html')

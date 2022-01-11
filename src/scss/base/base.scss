@@ -1,5 +1,8 @@
 @import 'normalize.css/normalize';
 @import 'swiper/swiper';
+//@import 'choices.js/src/styles/base.scss';
+//@import 'choices.js/src/styles/base';
+//@import 'choices.js/src/styles/choices';
 
 @include focus-visible;
 
@@ -7,6 +10,7 @@
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: none;
 }
 
 h1,
