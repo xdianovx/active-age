@@ -5,7 +5,9 @@ stages:
 job:
   stage: build
   script:
+    - npm i
     - npm run build:dev
+
   only:
     - master
   tags:
