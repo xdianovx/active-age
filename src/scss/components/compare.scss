@@ -137,3 +137,83 @@
     font-weight: 700;
   }
 }
+
+@media (max-width: 1440px) {
+  .compare {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .compare-table {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .compare-image {
+    display: none;
+  }
+  .compare__wrap {
+    margin-top: 30px;
+  }
+  .compare-table {
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .compare-table__footer .compare-table__house {
+    font-size: 16px;
+  }
+
+  .compare-table__footer .compare-table__nurse {
+    font-size: 16px;
+  }
+
+  .compare-table__footer .compare-table__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .compare-table__head {
+    padding: 12px 0;
+  }
+  .compare .title-h2 {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .compare-table__footer .compare-table__title {
+    width: 50%;
+  }
+
+  .compare-table__head .compare-table__house {
+    width: 15%;
+  }
+  .compare-table__head .compare-table__nurse {
+    width: 15%;
+  }
+
+  .compare-table__row > .compare-table__title {
+    width: 60%;
+  }
+
+  .compare-table__footer .compare-table__house {
+    width: 20%;
+  }
+
+  .compare-table__footer .compare-table__nurse {
+    width: 20%;
+  }
+
+  .compare-table__head .compare-table__title {
+    width: 60%;
+  }
+  .compare-table__head .compare-table__house {
+    font-size: 10px;
+  }
+
+  .compare-table__head .compare-table__nurse {
+    font-size: 10px;
+  }
+}

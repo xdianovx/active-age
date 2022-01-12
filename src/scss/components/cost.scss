@@ -3,6 +3,7 @@
   padding-bottom: 167px;
   background: $white;
 
+  overflow: hidden;
   .title-h2 {
     font-size: 48px;
     line-height: 1;
@@ -155,7 +156,6 @@
   .choices__item {
     font-size: 14px;
     line-height: 18px;
-
   }
 
   h4 {
@@ -185,6 +185,146 @@
 
     .radio {
       margin-left: 70px;
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .cost-form {
+    margin-top: 0;
+  }
+  .cost__wrap {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 60px auto 0;
+  }
+
+  .cost-form {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .cost-info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .cost-section {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+  .cost-info {
+    padding: 50px 30px;
+    margin-left: 0;
+  }
+
+  .form-row:nth-of-type(1) .radio {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cost-section .title-h2 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .cost-section .subtitle {
+    font-size: 18px;
+  }
+
+  .cost-form {
+    max-width: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .cost__wrap {
+    flex-direction: column;
+    padding: 0 15px;
+    max-width: 768px;
+  }
+
+  .cost-info {
+    margin-top: 60px;
+    max-width: none;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .cost-form .btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  .cost-info__list li {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .cost-info__info {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cost-section {
+    max-width: 768px;
+    width: 100%;
+  }
+  .cost__wrap {
+    max-width: 425px;
+  }
+
+  .cost-form .btn {
+    font-size: 12px;
+    padding: 12px 30px;
+  }
+  .form-row {
+    flex-wrap: wrap;
+    &:nth-of-type(1) {
+      input {
+        width: 100%;
+        position: static;
+        max-width: none;
+      }
+
+      .radio {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .cost__wrap {
+    max-width: none;
+  }
+
+  .form-row {
+    margin-bottom: 30px;
+  }
+
+  .form-row:nth-of-type(1) {
+    flex-direction: column;
+    align-items: flex-start;
+    input {
+      width: 100%;
+    }
+    .radio {
+      margin-left: 0;
+      margin-top: 20px;
     }
   }
 }

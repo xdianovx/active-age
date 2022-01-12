@@ -5,6 +5,9 @@
   overflow: hidden;
   background: #009afb;
 
+  .swiper-wrapper {
+    z-index: 0;
+  }
   .title-h2 {
     font-size: 110px;
     font-family: 'IkraSlab';
@@ -74,9 +77,10 @@
 
 .timeline-l {
   position: absolute;
-  top: 262px;
-  left: -110px;
-  z-index: 1;
+  top: 435px;
+
+  left: -71px;
+  z-index: 2;
   width: 123px;
   height: 123px;
   background-color: #00ffa8;
@@ -103,8 +107,8 @@
 
 .timeline-r {
   position: absolute;
-  top: 262px;
-  right: -110px;
+  top: 435px;
+  right: -71px;
   z-index: 1;
   width: 123px;
   height: 123px;
@@ -125,5 +129,92 @@
     height: 17px;
     background-image: url(../images/time-arr.svg);
     content: '';
+  }
+}
+
+@media (max-width: 1440px) {
+  .schedule {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .schedule .title-h2 {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .schedule .title-h2::before {
+    top: -30px;
+  }
+
+  .schedule .subtitle {
+    line-height: 1;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .timeline {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-line {
+    top: auto;
+    bottom: 58px;
+  }
+
+  .timeline-r,
+  .timeline-l {
+    top: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .schedule .title-h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+
+  .schedule .title-h2::before {
+    top: -20px;
+  }
+
+  .schedule .subtitle {
+    margin-top: 0;
+  }
+
+  .timeline-item h4 {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .timeline-item p {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .timeline-r,
+  .timeline-l {
+    top: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .timeline-item p {
+    text-align: center;
+  }
+
+  .timeline-item h4 {
+    text-align: center;
+  }
+
+  .timeline-r,
+  .timeline-l {
+    top: 150px;
+  }
+
+  .timeline-item::before {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

@@ -42,5 +42,30 @@
       opacity: 0.9;
     }
   }
+}
 
+@media (max-width: 1200px) {
+  .footer__wrap {
+    flex-wrap: wrap;
+  }
+  .footer__wrap ul {
+    max-width: 50%;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+  .footer__wrap {
+    margin-top: 30px;
+  }
+
+  .footer__wrap ul {
+    max-width: 100%;
+    margin-right: auto;
+    width: 100%;
+  }
 }

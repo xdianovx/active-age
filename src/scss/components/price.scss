@@ -90,3 +90,32 @@
   text-align: center;
   margin-top: 30px;
 }
+
+@media (max-width: 1440px) {
+  .price-top {
+    padding-top: 90px;
+  }
+  .price-card__wrap {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 25%);
+    padding: 0;
+    gap: 0 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .price-card__wrap {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 48%);
+    padding: 0;
+    gap: 50px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-card__wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -40,3 +40,55 @@
     opacity: 0.7;
   }
 }
+
+@media (max-width: 1440px) {
+  .header {
+    padding: 30px 0;
+  }
+
+  .header .excursion {
+    margin-left: 40px;
+  }
+
+  .header__phone {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .burger {
+    margin-left: 30px;
+  }
+
+  .header__address {
+    display: none;
+  }
+
+  .header__phone {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    padding: 20px 0;
+  }
+  .burger {
+    order: 2;
+    margin-left: 0;
+  }
+
+  .header__wrap {
+    position: relative;
+  }
+
+  .header__logo {
+    order: 1;
+    margin-right: auto;
+
+  }
+
+  .header__right {
+    display: none;
+  }
+}

@@ -12,6 +12,8 @@
     background-image: url(../images/covid-blur.png);
     transform: translateX(-50%);
     content: '';
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -55,5 +57,65 @@
     color: $white;
     font-weight: 500;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .covid {
+    padding: 60px 0;
+  }
+  .covid-title {
+    font-size: 64px;
+    line-height: 100%;
+  }
+
+  .covid-label {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .covid-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .covid__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .covid-title {
+    font-size: 48px;
+  }
+
+  .covid-label {
+    padding: 10px 20px;
+  }
+  .covid-item {
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-left: 0;
+      margin-top: 15px;
+      text-align: center;
+      line-height: 150%;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .covid-label {
+    font-size: 14px;
+  }
+  .covid {
+    padding: 40px 0;
+  }
+  .covid-title {
+    font-size: 32px;
   }
 }

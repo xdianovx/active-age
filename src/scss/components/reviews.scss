@@ -17,6 +17,7 @@
 .reviews-l,
 .reviews-r {
   position: absolute;
+  z-index: 2;
   width: 17px;
   height: 32px;
   cursor: pointer;
@@ -59,5 +60,93 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.4;
+  }
+}
+
+@media (max-width: 1440px) {
+  .reviews {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .reviews__slider {
+    margin-top: 40px;
+  }
+
+  .reviews .btn {
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-slide {
+    max-width: 480px;
+  }
+
+  .reviews-l {
+    left: 30px;
+  }
+
+  .reviews-r {
+    right: 30px;
+  }
+}
+
+@media (max-width: 670px) {
+  .review-slide {
+    max-width: 400px;
+  }
+
+  .reviews-l {
+    left: 20px;
+  }
+
+  .reviews-r {
+    right: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .review-slide {
+    max-width: 320px;
+  }
+
+  .reviews-l {
+    left: 20px;
+  }
+
+  .reviews-r {
+    right: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .review-slide {
+    max-width: 280px;
+  }
+
+  .reviews-l {
+    left: 20px;
+  }
+
+  .reviews-r {
+    right: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .review-slide {
+    max-width: 260px;
+  }
+
+  .reviews-l {
+    left: 10px;
+  }
+
+  .reviews-r {
+    right: 10px;
   }
 }
