@@ -25,4 +25,4 @@ jobs:
       - run: npm ci
       - run: npm run build:dev
       # Deploy
-      - run: cd build && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . admin@webscape.site:/var/www/webscape.site/dom
+      - run: cd build && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . admin@webscape.site:/var/www/dev/dom
