@@ -1,0 +1,15 @@
+image: node:alpine  // Образ Docker для развертывания ci по умолчанию
+
+stages:
+  // Сначала нужно определить несколько шагов. Все задания выполняются синхронно
+
+  - build
+
+job:
+  stage: build
+  script:
+    - npm run build:dev
+  only:
+    - master
+  tags:
+    - dianov
