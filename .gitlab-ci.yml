@@ -2,10 +2,16 @@ image: node:alpine
 stages:
   - build
 
+cache:
+  paths:
+    - node_modules/
+
 job:
   stage: build
   script:
+    - echo 'Ставим пакеты'
     - npm i
+    - echo 'Запускаем билд'
     - npm run build:dev
 
   only:
