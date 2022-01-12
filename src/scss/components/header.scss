@@ -23,8 +23,16 @@
   color: $white;
 }
 
+.header__address {
+  margin-left: 77px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .header__phone {
   margin-left: 77px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .excursion {
@@ -85,7 +93,6 @@
   .header__logo {
     order: 1;
     margin-right: auto;
-
   }
 
   .header__right {
