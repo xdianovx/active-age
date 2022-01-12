@@ -8,3 +8,7 @@ job:
     - npm i
     - npm run build:dev
 
+  only:
+    - master
+  tags:
+    - marat
