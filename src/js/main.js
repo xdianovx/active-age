@@ -4,6 +4,7 @@ import select from './modules/choices'
 import gallery from './modules/gallery'
 import reviews from './modules/reviews'
 import modal from './modules/modal'
+import menu from './modules/menu'
 
 document.addEventListener('DOMContentLoaded', () => {
   tabs()
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   gallery()
   reviews()
   modal()
+  menu()
 
   ymaps.ready(init)
   function init() {

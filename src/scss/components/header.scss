@@ -2,12 +2,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 1010;
   width: 100%;
   padding: 66px 0;
 
   .excursion {
     margin-left: 100px;
+  }
+
+  .container {
+    position: relative;
   }
 }
 
@@ -21,6 +25,10 @@
   align-items: center;
   margin-left: auto;
   color: $white;
+}
+
+.header__li-sub a {
+  pointer-events: none;
 }
 
 .header__address {
@@ -49,7 +57,92 @@
   }
 }
 
+.header__nav {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background: $white;
+  padding: 62px 60px;
+  max-width: 360px;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 2;
+  left: -100%;
+
+  &.active {
+    left: 0;
+  }
+
+  ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: pointer;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      color: #00a0f6;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      color: #00a0f6;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  top: 40px;
+  flex-wrap: wrap;
+  opacity: 0;
+  max-width: 1000px;
+  width: max-content;
+  box-shadow: 0 0 46px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  left: calc(100% + 30px);
+  padding: 65px 68px;
+  li {
+    max-width: 370px;
+    width: 100%;
+    color: $text;
+  }
+
+  &.active {
+    opacity: 1;
+    display: flex;
+  }
+}
+
 @media (max-width: 1440px) {
+  .header__nav {
+    top: 60px;
+    padding: 30px;
+    max-width: 300px;
+  }
+
+  .sub-menu {
+    max-width: 800px;
+    top: 0;
+    left: 100%;
+  }
+  .sub-menu.active {
+    padding: 30px;
+  }
+
+  .header__nav ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
   .header {
     padding: 30px 0;
   }
@@ -60,6 +153,12 @@
 
   .header__phone {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__nav {
+    max-width: 200px;
   }
 }
 
@@ -75,9 +174,32 @@
   .header__phone {
     display: none;
   }
+
+  .header__nav {
+    // max-width: 20%;
+  }
+
+  .sub-menu {
+    max-width: 550px;
+  }
 }
 
+@media (max-width: 768px) {
+  .header__nav {
+    max-width: 100%;
+  }
+
+  .sub-menu {
+    top: 50%;
+    left: 50%;
+    max-width: 550px;
+    transform: translateX(-50%);
+  }
+}
 @media (max-width: 550px) {
+  .sub-menu {
+    max-width: 320px;
+  }
   .header {
     padding: 20px 0;
   }
