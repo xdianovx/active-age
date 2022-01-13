@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <head>
+      <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=b4a80f0e-aa5c-4f6d-9741-4cd538701f29&lang=ru_RU"
+        type="text/javascript"
+      ></script>
+    </head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body-blackout"></div>
+
+    <div class="bl">
+      <!-- Header start-->
+      @@include('./components/header.html')
+      <!-- Header end-->
+    </div>
+
+    <main>
+      <div class="breadcrumbs">
+        <div class="container-small">
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li class="div"><img src="./images/bc.png" alt="" /></li>
+            <li>Стоимость проживания</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="price-page">
+        <div class="container-small">
+          <div class="price-page__wrap">
+            <div class="price-page__info">
+              <h2 class="title-h2">Стоимость проживания</h2>
+
+              <p>
+                Если вашему родственнику пожилого возраста понадобиться хороший
+                уход, сеть пансионатов «Родные Люди» в Нижнем Новгороде и
+                Нижегородской области к вашим услугам. Мы являемся частным домом
+                для престарелых людей и инвалидов с европейским уровнем
+                проживания и повышенными условиями комфорта. Несмотря на то, что
+                мы частная сеть, воспользоваться нашими услугами в финансовом
+                плане доступно большинству граждан пенсионного возраста нашей
+                страны.
+              </p>
+
+              <div class="media">
+                <img src="./images/price.png" alt="" />
+              </div>
+
+              <div class="quote">
+                <p>
+                  Стоимость пребывания у нас будет зависеть от условий
+                  проживания, которые выберет клиент, мы предоставляем
+                  комфортабельные комнаты на 1, 2, 3, человек, все зависит от
+                  платежеспособности пенсионера. Кроме этого цены будут не
+                  значительно отличаться от состояния здоровья старика, его
+                  дееспособности, оставшихся навыков к самообслуживанию.
+                </p>
+              </div>
+
+              <p>
+                Предварительный прайс на услуги можно увидеть на нашем сайте,
+                окончательная стоимость решается при оформлении и поступлении в
+                наше учреждение. Клиенту всегда при его желании предоставляется
+                информация о его платежах, соответствующая документация,
+                постояльцы всегда в курсе, куда уходят их финансовые средства.
+              </p>
+            </div>
+            <div class="price-page__right">
+              <div class="price-page-list">
+                <div class="price-page-list__head">
+                  <h3>НАШИ ПРЕИМУЩЕСТВА</h3>
+                </div>
+
+                <div class="price-page-list__body">
+                  <ul>
+                    <li>Уход и забота 24/7</li>
+                    <li>Уход за лежачими и больными</li>
+                    <li>Комфортные условия проживания</li>
+                    <li>Медицинская помощь</li>
+                    <li>Доброжелательный персонал</li>
+                    <li>Вкусное и полезное 5-и разовое питание</li>
+                    <li>Разнообразный и интересныйдосуг</li>
+                    <li>Приём и оформление</li>
+                    <li>Удобное местоположение</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cost start-->
+      <section class="cost-section">
+        <div class="container">
+          <h2 class="title-h2">Расчёт стоимости</h2>
+          <p class="subtitle">проживания в пансионате</p>
+        </div>
+        <div class="cost__wrap">
+          <div class="cost-form">
+            <form action="#">
+              <div class="form-row">
+                <input type="number" name="" id="" placeholder="Возраст" />
+                <label class="radio">
+                  <input type="radio" name="sex" required="" />
+                  <div class="radio__text">Мужчина</div>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="sex" required="" />
+                  <div class="radio__text">Женщина</div>
+                </label>
+              </div>
+
+              <div class="form-row">
+                <h4>Лежачий?</h4>
+                <label class="radio">
+                  <input type="radio" name="bedridden" required="" />
+                  <div class="radio__text">Да</div>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="bedridden" required="" />
+                  <div class="radio__text">Нет</div>
+                </label>
+              </div>
+
+              <div class="form-row form-row-col">
+                <h4>Условия размещения (тип комнаты)</h4>
+                <select class="select" name="" id="">
+                  <option value="1">5-местный номер</option>
+                  <option value="1">5-местный номер</option>
+                  <option value="1">5-местный номер</option>
+                  <option value="1">5-местный номер</option>
+                </select>
+              </div>
+
+              <div class="form-row form-row-col">
+                <h4>Срок пребывания (дней)</h4>
+                <select class="select" name="" id="">
+                  <option value="1">7</option>
+                  <option value="1">21</option>
+                  <option value="1">48</option>
+                  <option value="1">50</option>
+                </select>
+              </div>
+
+              <button class="btn btn-transparent">
+                Отправить заявку на расчёт
+              </button>
+            </form>
+          </div>
+          <div class="cost-info">
+            <div class="cost-info__icon">
+              <img src="./images/cost-info.png" alt="" />
+            </div>
+
+            <h4 class="cost-info__title">
+              Документы, необходимые при заселении в пансионат:
+            </h4>
+
+            <ul class="cost-info__list">
+              <li>1. Паспорт</li>
+              <li>2. Медицинский полис</li>
+              <li>3. СНИЛС</li>
+              <li>4. Анализы на ВИЧ, РВ, гепатит, туберкулёз</li>
+            </ul>
+
+            <div class="cost-info__info">
+              Все анализы вы можете сдать у нас на месте.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cost end-->
+
+      <section class="price-services">
+        <div class="container-small">
+          <h2 class="price-services__title">
+            Услуги, которые входят в основной прайс программы по уходу в
+            пансионате для престарелых людей и инвалидов
+          </h2>
+
+          <ol class="price-services__list">
+            <li>
+              В основную стоимость включена плата за комнату, в каждой из них
+              современный ремонт, создано все для комфортного пребывания, есть
+              бытовая техника, телевизор, интернет, приспособления для
+              передвижения людей с ограниченными возможностями;
+            </li>
+            <li>
+              Многоразовая, полезная, сбалансированная еда, меню разработано для
+              обычного стола и диетического, учитывая все потребности данной
+              возрастной категории;
+            </li>
+            <li>
+              Мы следим и ухаживаем за всеми вещами наших подопечных и их
+              гигиеной, белье нательное и постельное регулярно меняется,
+              сотрудники следят за чистотой и подобающим внешним видом наших
+              стариков;
+            </li>
+            <li>
+              Досуг так же включен в основную стоимость наших услуг, в интернате
+              пенсионеров ждут интересные мероприятия, посещение театров, кино,
+              музеев во время выездов в город.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="price-table">
+        <div class="container-small">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Номер</th>
+                  <th>Временно</th>
+                  <th>Постоянно</th>
+                  <th>Если лежачий или сложность</th>
+                  <th>Постоянно</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Номер">1-местный</td>
+                  <td data-label="Временно">1500</td>
+                  <td data-label="Постоянно">1400</td>
+                  <td data-label="Лежачий">+250</td>
+                  <td data-label="Постоянно">50%</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Номер">2-местный</td>
+                  <td data-label="Временно">1500</td>
+                  <td data-label="Постоянно">1400</td>
+                  <td data-label="Лежачий">+250</td>
+                  <td data-label="Постоянно">50%</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Номер">3-местный</td>
+                  <td data-label="Временно">1500</td>
+                  <td data-label="Постоянно">1400</td>
+                  <td data-label="Лежачий">+250</td>
+                  <td data-label="Постоянно">50%</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Номер">4-местный</td>
+                  <td data-label="Временно">1500</td>
+                  <td data-label="Постоянно">1400</td>
+                  <td data-label="Лежачий">+250</td>
+                  <td data-label="Постоянно">50%</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Номер">5-местный</td>
+                  <td data-label="Временно">1500</td>
+                  <td data-label="Постоянно">1400</td>
+                  <td data-label="Лежачий">+250</td>
+                  <td data-label="Постоянно">50%</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Номер">6-местный</td>
+                  <td data-label="Временно">1500</td>
+                  <td data-label="Постоянно">1400</td>
+                  <td data-label="Лежачий">+250</td>
+                  <td data-label="Постоянно">50%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Если вас заинтересовал наш пансионат «Родной Дом», обращайтесь к нам
+            по телефонам, уточняйте наличие свободных мест, наши работники
+            ответят на все ваши вопросы в любое время, предоставят список
+            документации, необходимой для оформления к нам. Определяя своего
+            пожилого родственника к нам, вы обеспечиваете его достойной
+            старостью, первоклассным уходом, качественной медицинской помощью,
+            все это постояльцы получают по доступной стоимости.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer start-->
+    @@include('./components/footer.html')
+    <!-- Footer end-->
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

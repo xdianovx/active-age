@@ -14,7 +14,12 @@
     position: relative;
   }
 }
-
+.bl {
+  .header__address,
+  .header__phone {
+    color: $text;
+  }
+}
 .header__wrap {
   display: flex;
   align-items: center;

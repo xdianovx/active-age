@@ -1,0 +1,365 @@
+.price-page {
+  margin-top: 67px;
+  .title-h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .media {
+    margin-top: 60px;
+  }
+
+  p {
+    margin-top: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .quote {
+    margin-top: 50px;
+    border: 10px solid #f8f8f8;
+    background-color: #fff;
+    padding: 50px;
+  }
+}
+
+.price-page__info {
+  max-width: 639px;
+}
+
+.price-page__wrap {
+  display: flex;
+}
+
+.price-page__right {
+  margin-left: 60px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.price-page-list {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.price-page-list__head {
+  background-image: linear-gradient(to top, #0098fe 0%, #00ffa8 100%);
+  color: $white;
+  padding: 28px 15px;
+  text-align: center;
+}
+
+.price-page-list__body {
+  padding: 25px 30px 45px;
+
+  li {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 40px;
+    padding-left: 26px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: $accent;
+      border-radius: 50%;
+      left: 0;
+      top: 4px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.price-services {
+}
+
+.price-services__title {
+  color: #4c4c4c;
+  font-family: 'IkraSlab', sans-serif;
+  font-size: 28px;
+}
+
+.price-services__list {
+  margin-top: 35px;
+  padding-left: 0;
+  counter-reset: myCounter;
+  li {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    font-size: 16px;
+    padding-left: 45px;
+    margin-bottom: 25px;
+    position: relative;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 29px;
+      height: 29px;
+      background-color: #00ffa8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      line-height: 1;
+      padding-top: 1px;
+      font-size: 16px;
+      font-family: 'Futura', sans-serif;
+      font-weight: 700;
+    }
+  }
+}
+
+.price-table {
+  margin-top: 160px;
+  margin-bottom: 90px;
+  p {
+    margin-top: 90px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  thead {
+    border-bottom: 1px solid $accent;
+
+    tr {
+      background: $accent;
+      border-right: 1px solid $accent;
+    }
+  }
+
+  tbody {
+    border-top: 3px solid $accent;
+  }
+  th {
+    padding: 22px 0px;
+
+    /* Style for "Номер" */
+    width: 906px;
+    height: 13px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  td {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+    text-align: center;
+    line-height: normal;
+    border-left: 1px solid #c4d8ca;
+    &:last-of-type {
+      border-right: 1px solid #c4d8ca;
+    }
+  }
+  tbody {
+    tr {
+      background-color: #d2f9eb;
+      &:nth-child(odd) {
+        background: #e8fff7;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .price-table {
+    margin-top: 90px;
+  }
+
+  .price-services {
+    margin-top: 30px;
+  }
+  .price-page {
+    margin-top: 70px;
+  }
+  .price-page__right {
+    margin-left: 30px;
+  }
+  .price-page-list__body {
+    padding: 20px;
+  }
+  .price-page-list__body li {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .price-page .title-h2 {
+    margin-bottom: 10px;
+  }
+
+  .price-page .media {
+    margin-top: 40px;
+  }
+
+  .price-page .quote {
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  .price-page p {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .price-services__title {
+    font-size: 24px;
+    line-height: 140%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .price-table {
+    margin-top: 60px;
+  }
+  .price-services {
+    margin-top: 0;
+  }
+
+  .price-page {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-table p {
+    margin-top: 60px;
+  }
+
+  .price-table {
+    margin-bottom: 60px;
+  }
+  table {
+    width: 100%;
+  }
+
+  .price-table tbody {
+    border-top: none;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  .price-table tbody tr {
+    background: #e8fff7;
+
+    &:nth-child(odd) {
+      background: #e8fff7;
+    }
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border: none;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #c4d8ca;
+  }
+
+  .price-table td:last-of-type {
+    border-right: none;
+  }
+
+  .price-table td {
+    border-left: none;
+    padding: 15px 20px;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .price-services__title {
+    font-size: 18px;
+  }
+
+  .price-services__list li {
+    font-size: 14px;
+  }
+  .price-page__wrap {
+    flex-direction: column;
+  }
+
+  .price-page__info {
+    max-width: none;
+  }
+
+  .price-page .media {
+    img {
+      width: 100%;
+    }
+  }
+
+  .price-page__right {
+    margin-left: 0;
+    max-width: none;
+    margin-top: 60px;
+  }
+
+  .price-page-list__body {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media (max-width: 550px) {
+  .price-table p {
+    margin-top: 30px;
+  }
+
+  .price-table {
+    margin-bottom: 50px;
+  }
+  .price-page-list__body ul li {
+    width: 100%;
+  }
+}
