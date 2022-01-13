@@ -83,6 +83,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^4.0.17",
     "choices.js": "^10.0.0",
     "focus-visible": "^5.2.0",
     "normalize.css": "^8.0.1",

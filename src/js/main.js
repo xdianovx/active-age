@@ -1,3 +1,5 @@
+import { Fancybox, Carousel, Panzoom } from '@fancyapps/ui'
+
 import tabs from './modules/tabs'
 import timeline from './modules/timeline'
 import select from './modules/choices'

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <head>
+      <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=b4a80f0e-aa5c-4f6d-9741-4cd538701f29&lang=ru_RU"
+        type="text/javascript"
+      ></script>
+    </head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body-blackout"></div>
+
+    <!-- Header start-->
+    @@include('./components/header.html')
+    <!-- Header end-->
+
+    <main>
+      <div class="breadcrumbs">
+        <div class="container-small">
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li class="div"><img src="./images/bc.png" alt="" /></li>
+            <li>Отзывы</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="reviews-page">
+        <div class="container-small">
+          <h2 class="title-h2">Отзывы</h2>
+
+          <div class="reviews-page__form">
+            <p class="reviews-page__form_title">Оставьте отзыв</p>
+            <form action="">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Текст"
+              ></textarea>
+              <div class="form-row">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="email" name="" id="" placeholder="Email" />
+
+                <div class="input__wrapper">
+                  <input
+                    type="file"
+                    name="file"
+                    id="input__file"
+                    class="input input__file"
+                  />
+                  <label for="input__file">+ Добавить видео</label>
+                </div>
+
+                <button type="submit">Отправить »</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="reviews-page-review__wrap">
+            <div class="reviews-page-review">
+              <div class="reviews-page-review__info">
+                <h4>Иван Петрович</h4>
+                <div class="reviews-page-review__email">vanya@mail.ru</div>
+                <div class="reviews-page-review__text">
+                  В силу своей постоянной занятости, я не смогла ухаживать за
+                  своей престарелой мамой, усложняло все, что ей постоянно нужно
+                  медицинское наблюдение. После долгих раздумий решила
+                  обратиться за помощью в специальное место для пожилых людей.
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-page-review">
+              <div class="reviews-page-review__info">
+                <h4>Арина</h4>
+                <div class="reviews-page-review__email">arina1934@mail.ru</div>
+                <div class="reviews-page-review__text">
+                  В силу своей постоянной занятости, я не смогла ухаживать за
+                  своей престарелой мамой, усложняло все, что ей постоянно нужно
+                  медицинское наблюдение. После долгих раздумий решила
+                  обратиться за помощью в специальное место для пожилых людей.
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-page-review">
+              <div class="reviews-page-review__media">
+                <div class="play">
+                  <img src="./images/play.svg" alt="" />
+                </div>
+                <a
+                  href="https://lipsum.app/id/1/1024x768"
+                  data-fancybox="gallery"
+                  data-caption="Optional caption"
+                >
+                  <img src="./images/revvid.png" alt="" />
+                </a>
+              </div>
+              <div class="reviews-page-review__info">
+                <h4>Геннадий</h4>
+                <div class="reviews-page-review__email">closeup@mail.ru</div>
+                <div class="reviews-page-review__text">
+                  Хотим выразить благодарность пансионату «Родные Люди» в
+                  Арзамасе Нижегородской области за прекрасное отношение и
+                  внимательность к каждому клиенту. К сожалению, у мамы
+                  деменция, без посторонней помощи она просто не может
+                  обходиться, а оставлять ее надолго одну опасно, поэтому после
+                  долгих раздумий приняли решение об определении ее в дом для
+                  престарелых людей.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-page-form">
+        <div class="container-small">
+          <div class="reviews-page-form__wrap">
+            <div class="reviews-page-form__title">Оформить заявку</div>
+
+            <div class="reviews-page-form__form">
+              <form action="">
+                <div class="form-input">
+                  <label for="name">Ваше имя*</label>
+                  <input type="text" name="" required id="" />
+                </div>
+
+                <div class="form-input">
+                  <label for="name">Телефон*</label>
+                  <input type="tel" name="" required id="" />
+                </div>
+
+                <button type="submit">Отправить »</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer start-->
+    @@include('./components/footer.html')
+    <!-- Footer end-->
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

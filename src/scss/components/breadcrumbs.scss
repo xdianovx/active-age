@@ -1,0 +1,31 @@
+.breadcrumbs {
+  background: $accent;
+  margin-top: 170px;
+  ul {
+    align-items: center;
+    display: flex;
+    padding: 24px 0;
+    color: $white;
+    li {
+      margin-right: 10px;
+      font-size: 10px;
+      line-height: 140%;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .breadcrumbs {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 550px) {
+  .breadcrumbs {
+    margin-top: 84px;
+    ul {
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  }
+}
