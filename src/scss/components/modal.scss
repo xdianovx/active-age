@@ -99,3 +99,53 @@
   top: -35px;
   right: -35px;
 }
+
+@media (max-width: 1024px) {
+  .popup-modal {
+    padding: 40px 30px;
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .popup-modal {
+    max-width: 550px;
+    padding: 40px 30px;
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .popup-modal {
+    max-width: 320px;
+    padding: 40px 30px;
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .popup-modal {
+    max-width: 90%;
+    padding: 30px 20px 30px;
+    h3 {
+      font-size: 18px;
+      text-align: left;
+      max-width: 200px;
+    }
+  }
+
+  .popup-modal__close {
+    top: 20px;
+    right: 20px;
+    border: 1px solid #000;
+  }
+}
