@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <head>
+      <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=b4a80f0e-aa5c-4f6d-9741-4cd538701f29&lang=ru_RU"
+        type="text/javascript"
+      ></script>
+    </head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body-blackout"></div>
+
+    <div class="bl">
+      <!-- Header start-->
+      @@include('./components/header.html')
+      <!-- Header end-->
+    </div>
+
+    <main>
+      <div class="breadcrumbs">
+        <div class="container-small">
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li class="div"><img src="./images/bc.png" alt="" /></li>
+            <li>Название страницы</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="template">
+        <div class="container-small">
+          <h1 class="title-h2">Заголовок страницы</h1>
+
+          <p>
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+            латинице с начала XVI века. В то время некий безымянный печатник
+            создал большую коллекцию размеров и форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+            без заметных изменений пять веков, но и перешагнул в электронный
+            дизайн. Его популяризации в новое время послужили публикация листов
+            Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее
+            время, программы электронной вёрстки типа Aldus PageMaker, в
+            шаблонах которых используется Lorem Ipsum.
+          </p>
+
+          <h3>Откуда он появился?</h3>
+          <p>
+            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский
+            набор слов, но это не совсем так. Его корни уходят в один фрагмент
+            классической латыни 45 года н.э., то есть более двух тысячелетий
+            назад. Ричард МакКлинток, профессор латыни из колледжа
+            Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
+            Lorem Ipsum, "consectetur", и занялся его поисками в классической
+            латинской литературе. В результате он нашёл неоспоримый
+            первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de
+            Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной
+            Цицероном в 45 году н.э. Этот трактат по теории этики был очень
+            популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem
+            ipsum dolor sit amet..", происходит от одной из строк в разделе
+            1.10.32
+          </p>
+        </div>
+      </section>
+
+      <section class="reviews-page-form">
+        <div class="container-small">
+          <div class="reviews-page-form__wrap">
+            <div class="reviews-page-form__title">Оформить заявку</div>
+
+            <div class="reviews-page-form__form">
+              <form action="">
+                <div class="form-input">
+                  <label for="name">Ваше имя*</label>
+                  <input type="text" name="" required id="" />
+                </div>
+
+                <div class="form-input">
+                  <label for="name">Телефон*</label>
+                  <input type="tel" name="" required id="" />
+                </div>
+
+                <button type="submit">Отправить »</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="template">
+        <div class="container-small">
+          <h3>Где его взять?</h3>
+          <p>
+            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский
+            набор слов, но это не совсем так. Его корни уходят в один фрагмент
+            классической латыни 45 года н.э., то есть более двух тысячелетий
+            назад. Ричард МакКлинток, профессор латыни из колледжа
+            Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в
+            Lorem Ipsum, "consectetur", и занялся его поисками в классической
+            латинской литературе.
+          </p>
+
+          <p>
+            В результате он нашёл неоспоримый первоисточник Lorem Ipsum в
+            разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О
+            пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот
+            трактат по теории этики был очень популярен в эпоху Возрождения.
+            Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+            происходит от одной из строк в разделе 1.10.32
+          </p>
+        </div>
+      </section>
+
+      <section class="template-form">
+        <div class="container-med">
+          <div class="template-form__wrap">
+            <h2 class="template-form__title">Заявка на экскурсию</h2>
+
+            <form action="">
+              <input type="text" name="" id="" placeholder="Ваше имя" />
+              <input type="tel" name="" id="" placeholder="Телефон" />
+              <input type="text" name="" id="" placeholder="Дата" />
+
+              <button type="button">Отправить »</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer start-->
+    @@include('./components/footer.html')
+    <!-- Footer end-->
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

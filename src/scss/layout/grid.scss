@@ -14,12 +14,18 @@
   padding: 0 15px;
 }
 
+.container-med {
+  position: relative;
+  max-width: 1142px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 @media (max-width: 1440px) {
   .container-small {
     max-width: 900px;
   }
-
-
 }
 
 @media (max-width: 1200px) {
